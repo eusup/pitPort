@@ -526,8 +526,9 @@ video {
   opacity: 0.8;
 
   &:last-child {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 1;
+    color: #3AFFB0;
 
     animation-name: bounce;
     animation-duration: 1s;
