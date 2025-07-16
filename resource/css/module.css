@@ -313,6 +313,7 @@ video {
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   height: 76px;
   margin-bottom: 50px;
@@ -321,7 +322,7 @@ video {
 .section .fp-tableCell>div.flex .title img {
   opacity: 0;
   transition: 1s;
-  transform: translateX(-50px);
+  transform: translateY(-50px);
 }
 
 .section02 .fp-tableCell>div.flex .fill ul {
@@ -387,14 +388,6 @@ video {
 .section02.act .fp-tableCell>div.flex .fill ul li {
   filter: blur(40px);
   transform: translateY(500px);
-}
-
-.section03 .fp-tableCell>div.flex .title {
-  justify-content: center;
-}
-
-.section03 .fp-tableCell>div.flex .title img {
-  transform: translateY(-50px);
 }
 
 .section03.active .fp-tableCell>div.flex .title img {
@@ -535,6 +528,10 @@ video {
   &:last-child {
     transform: scale(1.2);
     opacity: 1;
+
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
 }
 
@@ -547,5 +544,19 @@ video {
   100% {
     gap: 60px;
     opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
