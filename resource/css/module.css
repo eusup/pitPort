@@ -109,7 +109,6 @@
   box-sizing: border-box;
   letter-spacing: -0.025em;
   font-family: 'Pretendard';
-  transition: var(--duration);
   line-height: 1;
 }
 
@@ -379,7 +378,6 @@ i {
   display: flex;
   align-items: center;
   gap: var(--gap);
-  width: 100%;
 }
 
 .switch {
@@ -493,6 +491,120 @@ table td {
   left: 50%;
 }
 
+.fixedBG .pattern{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fixedBG .pattern img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 section {
   color: var(--color-white);
+}
+
+.section .fp-tableCell > div.flex{
+  height: calc(100% - 178px);
+  margin-top: 178px;
+}
+
+.section01 .fp-tableCell > div.flex{
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section01 .fp-tableCell > div.flex h2{
+  font-size: 6.4rem;
+  animation-name: spacing;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes spacing{
+  0%{
+    opacity: 0;
+    transform: scale(1.1);
+    letter-spacing: 0.1em;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+    letter-spacing: -0.025em;
+  }
+}
+
+.section01 .fp-tableCell > div.flex .img-box{
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  height: 600px;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes opacity{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.section01 .fp-tableCell > div.flex .img-box img{
+  position: absolute;
+}
+
+.section01 .fp-tableCell > div.flex .img-box  .human{
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+  height: 600px;
+}
+
+.section01 .fp-tableCell > div.flex .img-box .left{
+  top: 50px;
+  left: 0;
+  height: 180px;
+  animation-name: leftMove;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+}
+
+.section01 .fp-tableCell > div.flex .img-box .right{
+  top: 180px;
+  right: 0;
+  height: 180px;
+  animation-name: rightMove;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes leftMove{
+  0%{
+    transform: translateX(100px) scale(0.9);
+  }
+
+  100%{
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes rightMove{
+  0%{
+    transform: translateX(-100px) scale(0.9);
+  }
+
+  100%{
+    transform: translateX(0px) scale(1);
+  }
 }
