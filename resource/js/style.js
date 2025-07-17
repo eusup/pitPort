@@ -24,4 +24,8 @@ $(document).ready(function () {
             hadActive = hasActive;
         }, 100);
     });
+
+    $("body").scroll(function(){
+        console.log("test");
+    });
 });
