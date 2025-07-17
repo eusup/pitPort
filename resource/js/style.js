@@ -3,7 +3,7 @@ $(document).ready(function () {
         var page = $('#fullpage').fullpage({
             // navigation : true,
             navigationPosition: 'right',
-        });
+        })
     })
 
     var sections = $('.section01, .section02, .section03');
