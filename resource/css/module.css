@@ -281,6 +281,10 @@ video {
   animation-iteration-count: 1;
 }
 
+.section01.active .fp-tableCell>div.flex .img-box .left{
+
+}
+
 @keyframes leftMove {
   0% {
     transform: translateX(100px) scale(0.9);
@@ -356,7 +360,7 @@ video {
   transform: translateY(-100px);
   width: calc((100% - 40px) / 3);
   padding: 50px 0;
-  font-size: 4.8rem;
+  font-size: 3.6rem;
   font-weight: 300;
   transition: 0.7s;
   opacity: 0;
@@ -376,6 +380,14 @@ video {
     border-radius: 100px;
     background-color: #fff;
   }
+}
+
+.section02 .fp-tableCell>div.flex .fill ul li p{
+  width: 162px;
+}
+
+.section02 .fp-tableCell>div.flex .fill ul li b span{
+  font-size: 1.8rem;
 }
 
 .section02 .fp-tableCell>div.flex .fill ul li b {
