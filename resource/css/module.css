@@ -359,19 +359,13 @@ video {
   gap: 10px;
   transform: translateY(-100px);
   width: calc((100% - 40px) / 3);
-  padding: 50px 0;
+  padding: 36px;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
   font-size: 3.6rem;
   font-weight: 300;
   transition: 0.7s;
   opacity: 0;
-
-  &:nth-child(odd) {
-    padding-right: 0;
-  }
-
-  &:nth-child(even) {
-    padding-left: 0;
-  }
 
   &::before {
     content: "";
@@ -383,11 +377,7 @@ video {
 }
 
 .section02 .fp-tableCell>div.flex .fill ul li p{
-  width: 162px;
-}
-
-.section02 .fp-tableCell>div.flex .fill ul li b span{
-  font-size: 1.8rem;
+  width: 130px;
 }
 
 .section02 .fp-tableCell>div.flex .fill ul li b {
